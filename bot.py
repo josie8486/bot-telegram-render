@@ -1,5 +1,6 @@
 import logging
-from telegram import Bot, ParseMode
+from telegram import Bot
+from telegram.constants import ParseMode  # Mudança aqui!
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
 
