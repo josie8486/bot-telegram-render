@@ -1,3 +1,11 @@
+import os
+import logging
+
+# Essa parte faz o Render "pensar" que estamos usando uma porta
+PORT = os.environ.get('PORT', 8000)
+logging.info(f"Simulando uma porta de rede: {PORT}")
+
+
 import logging
 from telegram import Bot
 from telegram.constants import ParseMode  # Mudança aqui!
